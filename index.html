@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <title>BookMarker</title> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container py-5">
+        <div class="pb-4">
+            <p class="fw-bold mx-5 my-3">Bookmarker</p>
+        </div>
+        <div class="line"></div>
+        <div class="w-90 m-auto my-3 pt-5 text-center">
+            <h3 class="fs-4 fw-bold">Bookmark your favorite sites</h3>
+            <form class="d-flex flex-column align-items-center pt-4">
+                <label for="siteName" class="my-2">Site Name</label>
+                <input id="siteName" placeholder="Bookmark Name" class="w-75 my-2 rounded border-0" >
+                <div class="alert  w-75" role="alert" id="alertName">
+                    Enter valid name
+                </div>
+                <div class="alert  w-75" role="alert" id="alertCheck">
+                    this name already exist
+                </div>
+                <label for="siteURL" class="my-2">Site URL</label>
+                <input id="siteURL" placeholder="Website URL" class="w-75 my-2 rounded border-0" onblur="checkURL()">
+                <div class="alert w-75" role="alert" id="alerturl">
+                    Enter valid URL
+                </div>
+                
+            </form>
+            <button onclick="addNewSite()" class="px-3 py-2 mt-3 mb-5 border-0 text-white rounded">Submit</button>
+        </div>
+        <div id="favList"></div>
+        
+        <div class="line"></div>
+        <footer class="ms-5 mt-4">© 2019 Bookmarker Inc.</footer>
+</div>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
