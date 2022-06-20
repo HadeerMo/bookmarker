@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <title>BookMarker</title> -->
+    <title>BookMarker</title>
     <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 
@@ -27,13 +27,13 @@
                     this name already exist
                 </div>
                 <label for="siteURL" class="my-2">Site URL</label>
-                <input id="siteURL" placeholder="Website URL" class="w-75 my-2 rounded border-0" onblur="checkURL()">
+                <input id="siteURL" placeholder="Website URL" class="w-75 my-2 rounded border-0">
                 <div class="alert w-75" role="alert" id="alerturl">
                     Enter valid URL
                 </div>
                 
             </form>
-            <button onclick="addNewSite()" class="px-3 py-2 mt-3 mb-5 border-0 text-white rounded">Submit</button>
+            <button onclick="addNewSite()" class="px-3 py-2 mt-3 mb-5 border-0 text-white rounded" id="submitEditBtn">Submit</button>
         </div>
         <div id="favList"></div>
         
