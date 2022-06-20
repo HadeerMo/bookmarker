@@ -88,9 +88,6 @@ function checkName() {
     }
     return testInputName;
 }
-// function checkURL() {
-     
-// }
 function clearInputs(){
     nameSite.value="";
     URLSite.value="";
